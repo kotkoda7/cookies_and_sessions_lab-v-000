@@ -5,7 +5,7 @@ class ProductsController < ActionController
   end
   
   def add
-    @cart  = session[:cart] << params[:product]
+    cart << params[:product]
     render :index
   end
 end
